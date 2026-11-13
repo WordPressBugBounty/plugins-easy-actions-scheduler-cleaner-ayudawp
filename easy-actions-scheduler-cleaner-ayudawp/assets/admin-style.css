@@ -1,0 +1,598 @@
+/**
+ * Admin styles for Easy Actions Scheduler Cleaner
+ *
+ * @package EasyActionsSchedulerCleanerAyudaWP
+ * @since 1.2.0
+ */
+
+/* ==========================================================================
+   Tab navigation
+   ========================================================================== */
+
+.easc-nav-tabs {
+	margin-bottom: 0;
+}
+
+.easc-tab-content {
+	padding-top: 20px;
+}
+
+/* ==========================================================================
+   Info, success and schedule boxes
+   ========================================================================== */
+
+.easc-info-box {
+	background: #f8f9fa;
+	border: 1px solid #dee2e6;
+	border-left: 4px solid #007cba;
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.easc-success-box {
+	background: #f8f9fa;
+	border: 1px solid #dee2e6;
+	border-left: 4px solid #28a745;
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Box titles */
+.easc-info-box h2,
+.easc-success-box h2 {
+	color: #495057;
+	margin-top: 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/* Irreversibility note */
+.easc-note {
+	color: #856404;
+	background: #fff3cd;
+	border: 1px solid #ffeeba;
+	padding: 10px 14px;
+	border-radius: 4px;
+	font-size: 13px;
+}
+
+/* ==========================================================================
+   Button styling
+   ========================================================================== */
+
+.easc-button-group {
+	margin-top: 20px;
+}
+
+.easc-button-group .button,
+.easc-button-group input[type="submit"] {
+	margin-right: 10px;
+	padding: 10px 20px;
+	height: auto;
+	font-weight: 500;
+	border-radius: 4px;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+/* Equal width button group */
+.easc-button-group-equal {
+	display: flex;
+	gap: 12px;
+}
+
+.easc-button-group-equal .button,
+.easc-button-group-equal input[type="submit"] {
+	flex: 1;
+	text-align: center;
+	margin-right: 0;
+	max-width: 280px;
+}
+
+/* Execute / primary action button */
+.easc-execute {
+	background: #007cba !important;
+	border-color: #007cba !important;
+	color: white !important;
+}
+
+.easc-execute:hover {
+	background: #005a87 !important;
+	border-color: #005177 !important;
+	color: white !important;
+}
+
+/* Schedule button */
+.easc-schedule-btn {
+	background: #007cba !important;
+	border-color: #007cba !important;
+	color: white !important;
+}
+
+.easc-schedule-btn:hover {
+	background: #005a87 !important;
+	border-color: #005177 !important;
+	color: white !important;
+}
+
+/* Neutral / secondary button */
+.easc-neutral-btn {
+	background: #6c757d !important;
+	border-color: #6c757d !important;
+	color: white !important;
+}
+
+.easc-neutral-btn:hover {
+	background: #545b62 !important;
+	border-color: #4e555b !important;
+	color: white !important;
+}
+
+/* ==========================================================================
+   Actions list styling
+   ========================================================================== */
+
+.easc-actions-list {
+	margin: 15px 0;
+	padding-left: 20px;
+	color: #495057;
+	list-style-type: '- ';
+}
+
+.easc-actions-list li {
+	margin: 8px 0;
+	line-height: 1.5;
+}
+
+/* ==========================================================================
+   Results table styling
+   ========================================================================== */
+
+.easc-results-table {
+	margin-top: 20px;
+	width: 100%;
+	border-collapse: collapse;
+	background: white;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.easc-results-table th,
+.easc-results-table td {
+	padding: 12px 15px;
+	border-bottom: 1px solid #dee2e6;
+	text-align: left;
+}
+
+.easc-results-table th {
+	background: #f8f9fa;
+	font-weight: 600;
+	color: #495057;
+	border-bottom: 2px solid #dee2e6;
+}
+
+.easc-results-table tr:last-child td {
+	border-bottom: none;
+}
+
+.easc-results-table tbody tr:hover {
+	background: #f8f9fa;
+}
+
+/* Total rows */
+.easc-row-total td {
+	font-weight: 600;
+	background: #f8f9fa;
+	color: #495057;
+}
+
+.easc-row-total-success td {
+	font-weight: 600;
+	background: #e8f5e8;
+	color: #155724;
+}
+
+/* Space estimation rows */
+.easc-row-space td {
+	color: #007cba;
+	font-style: italic;
+	border-top: 2px solid #dee2e6;
+}
+
+.easc-row-space-saved td {
+	font-weight: 600;
+	background: #d4edda;
+	color: #155724;
+}
+
+/* Post-cleanup info box */
+.easc-post-cleanup-info {
+	margin-top: 20px;
+	padding: 15px;
+	background: #f8f9fa;
+	border: 1px solid #dee2e6;
+	border-radius: 4px;
+	color: #495057;
+}
+
+/* ==========================================================================
+   Schedule page styles
+   ========================================================================== */
+
+.easc-schedule-box {
+	background: #f8f9fa;
+	border: 1px solid #dee2e6;
+	border-left: 4px solid #007cba;
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.easc-schedule-box h2 {
+	color: #495057;
+	margin-top: 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.easc-schedule-box h3 {
+	margin-top: 25px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #495057;
+}
+
+/* Master toggle */
+.easc-schedule-master {
+	margin: 15px 0 20px;
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #dee2e6;
+	border-radius: 4px;
+}
+
+.easc-toggle-label {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+}
+
+.easc-toggle-label input[type="checkbox"] {
+	width: 18px;
+	height: 18px;
+}
+
+.easc-next-run {
+	margin-top: 8px;
+	margin-bottom: 0;
+	color: #007cba;
+	font-style: italic;
+	font-size: 13px;
+}
+
+/* Field row */
+.easc-field-row {
+	margin-bottom: 15px;
+}
+
+.easc-field-row label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.easc-field-row select {
+	min-width: 200px;
+}
+
+/* Schedule table */
+.easc-schedule-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+	margin-top: 10px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.easc-schedule-table th,
+.easc-schedule-table td {
+	padding: 12px 15px;
+	border-bottom: 1px solid #dee2e6;
+	text-align: left;
+	vertical-align: top;
+}
+
+.easc-schedule-table th {
+	background: #f8f9fa;
+	font-weight: 600;
+	color: #495057;
+	font-size: 13px;
+}
+
+.easc-schedule-table tr:last-child td {
+	border-bottom: none;
+}
+
+.easc-col-toggle {
+	width: 60px;
+	text-align: center !important;
+}
+
+.easc-col-toggle input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+}
+
+.easc-col-type {
+	width: auto;
+}
+
+.easc-col-threshold {
+	width: 130px;
+}
+
+.easc-col-threshold input[type="number"] {
+	width: 90px;
+}
+
+.easc-col-current {
+	width: 130px;
+	color: #495057;
+}
+
+.easc-type-desc {
+	display: block;
+	color: #6c757d;
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+.easc-days-field {
+	display: block;
+	margin-top: 6px;
+	font-size: 13px;
+}
+
+.easc-days-field input[type="number"] {
+	width: 60px;
+}
+
+/* Badge for threshold reached */
+.easc-badge {
+	display: inline-block;
+	font-size: 12px;
+	padding: 1px 6px;
+	border-radius: 3px;
+	margin-left: 4px;
+	font-weight: 600;
+}
+
+.easc-badge-ready {
+	background: #d4edda;
+	color: #155724;
+}
+
+/* Row highlight when threshold is met */
+.easc-will-clean {
+	background: #f0fff4;
+}
+
+/* Last run info - base */
+.easc-last-run-info {
+	margin: 10px 0 15px;
+	padding: 10px 15px;
+	border-radius: 4px;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+/* Last run - success (records deleted) */
+.easc-last-run-success {
+	background: #e8f5e8;
+	border: 1px solid #c3e6cb;
+	color: #155724;
+}
+
+/* Last run - skipped (thresholds not met) */
+.easc-last-run-skipped {
+	background: #e8f4fd;
+	border: 1px solid #b8daff;
+	color: #004085;
+}
+
+/* Last run - error */
+.easc-last-run-error {
+	background: #f8d7da;
+	border: 1px solid #f5c6cb;
+	color: #721c24;
+}
+
+/* Breakdown details */
+.easc-last-run-details {
+	display: block;
+	margin-top: 4px;
+	font-size: 12px;
+	opacity: 0.85;
+}
+
+/* Schedule options container (toggled by JS) */
+.easc-schedule-options,
+.easc-notification-options {
+	transition: opacity 0.2s ease;
+}
+
+.easc-schedule-options.easc-disabled,
+.easc-notification-options.easc-disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+/* ==========================================================================
+   Notification page styles
+   ========================================================================== */
+
+.easc-notification-section {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dee2e6;
+}
+
+.easc-notification-section:last-of-type {
+	border-bottom: none;
+}
+
+.easc-notification-section h3 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #495057;
+	font-weight: 600;
+}
+
+/* ==========================================================================
+   Promotional notice - Plugin install boxes
+   ========================================================================== */
+
+.easc-promo-notice {
+	background: #f6f7f7;
+	border: 1px solid #c3c4c7;
+	padding: 20px;
+	margin-top: 30px;
+}
+
+.easc-promo-columns {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 25px;
+}
+
+.easc-promo-column {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.easc-promo-column > .dashicons {
+	font-size: 28px;
+	width: 28px;
+	height: 28px;
+	color: #007cba;
+	margin-bottom: 12px;
+}
+
+.easc-promo-column h5 {
+	margin: 0 0 10px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #1d2327;
+	line-height: 1.4;
+}
+
+.easc-promo-column p {
+	margin: 0 0 15px;
+	color: #50575e;
+	font-size: 13px;
+	line-height: 1.5;
+	flex-grow: 1;
+}
+
+.easc-promo-notice .easc-promo-column .button {
+	align-self: flex-start;
+	margin-top: auto;
+	white-space: normal;
+	height: auto;
+	min-height: auto;
+	line-height: 1.4;
+	padding: 6px 12px;
+	text-align: center;
+}
+
+/* ==========================================================================
+   General
+   ========================================================================== */
+
+.wrap h1 {
+	color: #23282d;
+}
+
+.wrap h3 {
+	color: #495057;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+	.easc-promo-columns {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 782px) {
+	.easc-promo-columns {
+		grid-template-columns: 1fr;
+	}
+
+	.easc-button-group .button,
+	.easc-button-group input[type="submit"] {
+		display: block;
+		margin-bottom: 10px;
+		margin-right: 0;
+		text-align: center;
+	}
+
+	.easc-button-group-equal {
+		flex-direction: column;
+	}
+
+	.easc-button-group-equal .button,
+	.easc-button-group-equal input[type="submit"] {
+		max-width: 100%;
+	}
+
+	.easc-results-table,
+	.easc-schedule-table {
+		font-size: 14px;
+	}
+
+	.easc-results-table th,
+	.easc-results-table td,
+	.easc-schedule-table th,
+	.easc-schedule-table td {
+		padding: 8px 10px;
+	}
+
+	.easc-schedule-table {
+		display: block;
+		overflow-x: auto;
+	}
+}
+
+/* Test email links */
+.easc-test-link-wrap {
+	margin: 5px 0 0;
+}
+
+.easc-test-link {
+	font-size: 13px;
+	color: #007cba;
+	text-decoration: none;
+}
+
+.easc-test-link:hover {
+	color: #005177;
+	text-decoration: underline;
+}

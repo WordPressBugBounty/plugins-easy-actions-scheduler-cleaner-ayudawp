@@ -1,0 +1,75 @@
+Easy Actions Scheduler Cleaner — Full changelog
+
+For each release, see the entries below. The latest version is always at the top.
+The current release notes also live in readme.txt under "== Changelog ==".
+
+= 1.3.1 =
+* Tested up to WordPress 7.1
+* Tested up to WooCommerce 11.0
+* Minimum WordPress version raised to 6.0
+
+= 1.3.0 =
+* New: Background processing for scheduled cleanup - runs as a self-rescheduling Action Scheduler job, so it never times out on sites with millions of records
+* New: Time-budgeted batches (default 25s per step, filterable via `easc_cleanup_step_time_budget`) prevent PHP execution timeouts on large tables
+* New: `easc_batch_size` filter for developers who need to tune batch size per context
+* New: Smart admin notice for large sites without scheduled cleanup - suggests enabling it when more than 500.000 records are detected (threshold filterable via `easc_large_site_threshold`)
+* Improved: More recommended plugins in settings page
+* Improved: Synchronous fallback path is preserved when Action Scheduler hooks are not available
+
+= 1.2.3 =
+* Tested up to WooCommerce 10.7
+
+= 1.2.2 =
+* Fix: Fixed promotional banner button alignment on WordPress 7.0 due to core CSS specificity changes
+* Tested up to WordPress 7.0
+
+= 1.2.1 =
+* Improved: Cleaner admin UI - removed notice-style left borders from setting boxes
+* Improved: Added new plugin recommendation
+
+= 1.2.0 =
+* New: Email notifications system with three notification types
+* New: Periodic reports (daily, weekly, monthly) with database status and cleanup results
+* New: Accumulation alerts when records exceed threshold without active schedule
+* New: Missed cleanup alerts when WP-Cron fails to execute
+* New: Separate recipient configuration for reports (management) and alerts (technical)
+* New: Database space estimation showing MB used by Action Scheduler tables
+* New: Estimated space freed shown in cleanup results
+* New: "Schedule Cleanup" action link in plugins list screen
+* New: Test email buttons to verify report and alert delivery from settings
+* Improved: Softer, less intimidating UI for manual cleanup page
+* Improved: Removed unnecessary deactivation buttons from cleanup flow
+* Improved: Shorter submenu name for better admin navigation
+* Improved: HTML formatted email templates
+
+= 1.1.0 =
+* New: Scheduled cleanup with WP-Cron support
+* New: Configurable frequency (daily, weekly, biweekly, monthly)
+* New: Per-type thresholds for smart automatic cleanup
+* New: Configurable age for old pending actions (7-365 days)
+* New: Tab-based admin interface (Manual cleanup / Scheduled cleanup)
+* New: Last scheduled run reporting
+* New: Post-cleanup option to schedule automatic cleanup instead of just deactivating
+* New: AyudaWP plugin recommendations banner
+
+= 1.0.2 =
+* Tested up to WordPress 6.9
+* Tested up to WooCommerce 10.3.x
+
+= 1.0.1 =
+* Removed WooCommerce as required dependency
+* Plugin now works with any plugin using Action Scheduler
+* Added settings link in plugins list for quick access
+* Improved activation checks to verify Action Scheduler tables only
+* Updated plugin descriptions and documentation
+
+= 1.0.0 =
+* Initial release
+* Support for cleaning completed, failed, canceled, and past-due actions
+* Support for cleaning old pending actions (30+ days)
+* Support for cleaning action logs
+* Batch processing for large datasets
+* Orphaned data cleanup
+* Detailed reporting
+* Safety warnings and confirmations
+* Automatic plugin deactivation
